@@ -1,0 +1,20 @@
+.imagem-cadastro{
+    background-image: url(../imagens/imagem1.webp);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-cadastrar{
+    font-weight: bold !important;
+    color: #d6254d;
+}
+
+.botao-cadastrar{
+    border-color: #ff5475 !important;
+    background-color: #d6254d !important;
+    color: white !important;
+    margin-right: 20px !important;
+}

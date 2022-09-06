@@ -1,0 +1,27 @@
+.texto-entrar{
+    font-weight: bold !important;
+    color: #d6254d;
+}
+
+.texto-cadastre{
+    font-weight: bold !important;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.imagemLogin {
+    background-image: url(../imagens/imagem1.webp);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.botao{
+    border-color: #d6254d; 
+    background-color: #ff5475;
+    color: white;
+}

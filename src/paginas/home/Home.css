@@ -1,0 +1,23 @@
+.caixa {
+    background-color:  #fffee4;
+}
+
+.titulo-bemvindo{
+    color: #ff9036 !important;
+    font-weight: bolder !important;
+}
+
+.subtitulo-bemvindo{
+    color: black;
+    font-weight: bold;
+}
+
+.botao{
+    border-color: #d6254d !important;
+    background-color: #ff5475 !important;
+    color:white !important;
+}
+
+.postagens{
+    background-color: white;
+}
