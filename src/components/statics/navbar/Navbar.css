@@ -1,8 +1,32 @@
+.container{
+    position: static !important;
+    background-color: #ff9036 !important;
+}
+
+.nome{
+    color: #d6254d !important;
+    font-weight: bold !important;
+}
+
+
 .cursor {
     cursor: pointer;
-    color: white;
+    color: #fffee4 !important;
+    display: flex !important;
+    justify-content: right !important;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.barra{
+    display: flex !important;
+    justify-content: right !important;
+    color: #fffee4 !important;
+}
+
+.botao-login{
+    background-color: #fffee4 !important;
+    color: #d6254d !important;
 }

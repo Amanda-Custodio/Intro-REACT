@@ -7,21 +7,21 @@ function ListaPostagem() {
     return (
         <>
             <Box m={2} >
-                <Card variant='outlined'>
+                <Card variant='outlined' className='card'>
                     <CardContent>
-                        <Typography color='textSecondary' gutterBottom>
+                        <Typography color='textSecondary' gutterBottom className='posts'>
                             Postagens
                         </Typography>
 
-                        <Typography variant='h5' component='h2'>
+                        <Typography variant='h5' component='h2' className='posts'>
                             Título
                         </Typography>
 
-                        <Typography variant='body2' component='p'>
+                        <Typography variant='body2' component='p' className='posts'>
                             Texto da Postagem
                         </Typography>
 
-                        <Typography variant='body2' component='p'>
+                        <Typography variant='body2' component='p' className='posts'>
                             Tema
                         </Typography>
                     </CardContent>
@@ -30,7 +30,7 @@ function ListaPostagem() {
                         <Box display='flex' justifyContent='center' mb={1.5}>
                             <Link to="" className='text-decorator-none'>
                                 <Box mx={1}>
-                                    <Button variant='contained' className='marginLeft' size='small' color='primary'>
+                                    <Button variant='contained' className='atualizar' size='small'>
                                         Atualizar
                                     </Button>
                                 </Box>
@@ -38,7 +38,7 @@ function ListaPostagem() {
 
                             <Link to="" className='text-decorator-none'>
                                 <Box mx={1}>
-                                    <Button variant='contained' className='marginLeft' size='small' color='secondary'>
+                                    <Button variant='contained' className='deletar' size='small'>
                                         Deletar
                                     </Button>
                                 </Box>

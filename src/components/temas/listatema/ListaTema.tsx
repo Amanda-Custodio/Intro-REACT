@@ -7,13 +7,13 @@ function ListaTema() {
     return (
         <>
             <Box m={2}>
-                <Card variant='outlined'>
+                <Card variant='outlined' className='card'>
                     <CardContent>
-                        <Typography color='textSecondary' gutterBottom>
+                        <Typography gutterBottom className='posts'>
                             Tema
                         </Typography>
 
-                        <Typography variant='h5' component='h2'>
+                        <Typography variant='h5' component='h2' className='posts'>
                             Minha descrição
                         </Typography>
                     </CardContent>
@@ -22,7 +22,7 @@ function ListaTema() {
                         <Box display='flex' justifyContent='center' mb={1.5}>
                             <Link to="" className='text-decorator-none'>
                                 <Box mx={1}>
-                                    <Button variant="contained" className='marginLeft' size='small' color='primary'>
+                                    <Button variant="contained" className='atualizar' size='small'>
                                         Atualizar
                                     </Button>
                                 </Box>
@@ -30,7 +30,7 @@ function ListaTema() {
 
                             <Link to="" className='text-decorator-none'>
                                 <Box mx={1}>
-                                    <Button variant="contained" className='marginLeft' size='small' color='secondary'>
+                                    <Button variant="contained" className='deletar' size='small'>
                                         Deletar
                                     </Button>
                                 </Box>

@@ -5,6 +5,11 @@
 
 .texto-cadastre{
     font-weight: bold !important;
+    color: black;
+}
+
+.texto-cadastre:hover{
+    color: #d6254d;
 }
 
 .text-decorator-none{

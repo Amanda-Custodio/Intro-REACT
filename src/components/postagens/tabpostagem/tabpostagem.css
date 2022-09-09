@@ -1,3 +1,8 @@
 .titulo{
     font-weight: bold;
 }
+
+.faixa{
+    color: white !important;
+    background-color: #d6254d !important;
+}

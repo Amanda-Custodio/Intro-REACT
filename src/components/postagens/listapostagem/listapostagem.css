@@ -1,3 +1,23 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.card{
+    border-color: #ff5475 !important;
+}
+
+.atualizar{
+    margin: left;
+    background-color: #d6254d !important;
+    color: #fffee4 !important;
+}
+
+.deletar{
+    margin: left;
+    background-color: #fffee4 !important;
+    color: #d6254d !important;
+}
+
+.posts{
+    color: #ff9036 !important;
+}
