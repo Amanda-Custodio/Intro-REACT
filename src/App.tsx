@@ -9,6 +9,10 @@ import Login from './paginas/login/login';
 import CadastroUsuario from './paginas/cadastro-usuario/CadastroUsuario';
 import ListaTema from './components/temas/listatema/ListaTema';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
+import CadastroPost from './components/postagens/cadastroPost/cadastroPost';
+import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem';
+import CadastroTema from './components/temas/cadastroTema/cadastroTema';
+import DeletarTema from './components/temas/deletarTema/deletarTema';
 
 function App() {
   return (
@@ -16,12 +20,18 @@ function App() {
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes>
-        <Route path='/' element={<Login />} />
+          <Route path='/' element={<Login />} />
           <Route path='/login' element={<Login />} />
           <Route path='/home' element={<Home />} />
           <Route path='/cadastrousuario' element={<CadastroUsuario />} />
           <Route path='/temas' element={<ListaTema />} />
           <Route path='/posts' element={<ListaPostagem />} />
+          <Route path='/formularioPostagem'> <CadastroPost /></Route>
+          <Route path='/formularioPostagem/:id'> <CadastroPost /></Route>
+          <Route path='/formularioTema'> <CadastroTema /></Route>
+          <Route path='/formularioTema/:id'> <CadastroTema /></Route>
+          <Route path='/deletarPostagem/:id'> <DeletarPostagem /></Route>
+          <Route path='/deletarTema/:id'> <DeletarTema /></Route>
         </Routes>
       </div>
       <Footer />

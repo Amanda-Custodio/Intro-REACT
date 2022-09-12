@@ -6,11 +6,22 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 /* import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu'; */
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 // importei do @mui e não do pacote do material-ui como o vídeo mostrou, e não é mais /core e sim mui/material
+import useLocalStorage from 'react-use-localstorage';
 
 function Navbar() {
+
+    const[token, setToken] = useLocalStorage('token');
+    let history = useNavigate();
+
+    function goLogout(){
+        setToken('')
+        alert('Usuário deslogado')
+        history("/login")
+    }
+
     return (
         <>
             <AppBar className='container'>
@@ -37,7 +48,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/temas' className='text-decorator-none'>
+                        <Link to='/formularioTema' className='text-decorator-none'>
                         <Box mx={1} className='cursor'>
                             <Typography variant='h6'>
                                 Cadastrar temas
@@ -45,7 +56,7 @@ function Navbar() {
                         </Box>
                         </Link>
 
-                        <Box mx={1} className='cursor'>
+                        <Box mx={1} className='cursor' onClick={goLogout}>
                             <Typography variant='h6'>
                                 Logout
                             </Typography>
