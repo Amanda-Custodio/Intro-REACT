@@ -23,15 +23,15 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/login' element={<Login />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/cadastrousuario' element={<CadastroUsuario />} />
+          <Route path='/CadastroUsuario' element={<CadastroUsuario />} />
           <Route path='/temas' element={<ListaTema />} />
           <Route path='/posts' element={<ListaPostagem />} />
-          <Route path='/formularioPostagem'> <CadastroPost /></Route>
-          <Route path='/formularioPostagem/:id'> <CadastroPost /></Route>
-          <Route path='/formularioTema'> <CadastroTema /></Route>
-          <Route path='/formularioTema/:id'> <CadastroTema /></Route>
-          <Route path='/deletarPostagem/:id'> <DeletarPostagem /></Route>
-          <Route path='/deletarTema/:id'> <DeletarTema /></Route>
+          <Route path='/cadastroPost'element={<CadastroPost />} />
+          <Route path='/cadastroPost/:id' element={<CadastroPost />} />
+          <Route path='/cadastroTema' element={<CadastroTema />} />
+          <Route path='/cadastroTema/:id' element={<CadastroTema />} />
+          <Route path='/deletarPostagem/:id' element={<DeletarPostagem />} />
+          <Route path='/deletarTema/:id' element={<DeletarTema />} />
         </Routes>
       </div>
       <Footer />
